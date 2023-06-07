@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 1
+    },
+    "auditLog": "I:\\university-management-auth-service\\logs\\winston\\errors\\.4427cc7ce40c244de93a09f9c2183b94bfbd62f9-audit.json",
+    "files": [
+        {
+            "date": 1685767427753,
+            "name": "I:\\university-management-auth-service\\logs\\winston\\errors\\UMA-2023-03-06-10-error.log",
+            "hash": "e8502449fcf89c62263fac3c6c1ad491ad4fd838bcc1a2e6c0a2060e096c4215"
+        },
+        {
+            "date": 1685768408931,
+            "name": "I:\\university-management-auth-service\\logs\\winston\\errors\\UMA-2023-03-06-11-error.log",
+            "hash": "4e5a96089a18e7c9b73925f2922e0c3fca50774cdf329e599626de709cfa8f98"
+        },
+        {
+            "date": 1685772331577,
+            "name": "I:\\university-management-auth-service\\logs\\winston\\errors\\UMA-2023-03-06-12-error.log",
+            "hash": "d63c2567ec75f5db8e53bbd1dccff402bdd4665420fa205b0e42dcd32a2ad0fc"
+        },
+        {
+            "date": 1685779646235,
+            "name": "I:\\university-management-auth-service\\logs\\winston\\errors\\UMA-2023-03-06-14-error.log",
+            "hash": "95069094b8a1b3c74a9e19e7f57c7a733a5a1d0eb495bac689db99adda066a6a"
+        },
+        {
+            "date": 1685782864250,
+            "name": "I:\\university-management-auth-service\\logs\\winston\\errors\\UMA-2023-03-06-15-error.log",
+            "hash": "b8848af87e7733b981aebdea7504822e46a50622ba4375ee9b6eafa2bd105533"
+        },
+        {
+            "date": 1685791558544,
+            "name": "I:\\university-management-auth-service\\logs\\winston\\errors\\UMA-2023-03-06-17-error.log",
+            "hash": "66f78936318baf21654ed459622a158d246ab8dc24b3f8f604c22e55e91e21d4"
+        },
+        {
+            "date": 1685793614296,
+            "name": "I:\\university-management-auth-service\\logs\\winston\\errors\\UMA-2023-03-06-18-error.log",
+            "hash": "aa48dc0c68f580f833113f981d097bb1abd33b7fa5a603e2fdff74d42cbb29f2"
+        }
+    ],
+    "hashType": "sha256"
+}

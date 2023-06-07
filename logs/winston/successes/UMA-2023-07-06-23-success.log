@@ -1,0 +1,12 @@
+{
+  message: 'Database connected Successfully',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-07T17:24:44.071Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-07T17:24:44.109Z'
+}

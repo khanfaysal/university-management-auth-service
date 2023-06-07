@@ -1,0 +1,84 @@
+{
+  message: 'Database connected Successfully',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:29:19.899Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:29:19.938Z'
+}
+{
+  message: 'Database connected Successfully',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:30:22.603Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:30:22.635Z'
+}
+{
+  message: 'Database connected Successfully',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:33:09.000Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:33:09.023Z'
+}
+{
+  message: 'Database connected Successfully',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:33:46.108Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:33:46.143Z'
+}
+{
+  message: 'Database connected Successfully',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:34:08.914Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:34:08.954Z'
+}
+{
+  message: 'Database connected Successfully',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:34:44.565Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:34:44.609Z'
+}
+{
+  message: 'Database connected Successfully',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:36:20.936Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-02T16:36:20.964Z'
+}

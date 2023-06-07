@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 1
+    },
+    "auditLog": "/media/md/New Volume1/university-management-auth-service/logs/winston/successes/.f0bd90996874941b7def026616b888f707fa6f18-audit.json",
+    "files": [
+        {
+            "date": 1685985894896,
+            "name": "/media/md/New Volume1/university-management-auth-service/logs/winston/successes/UMA-2023-05-06-23-success.log",
+            "hash": "f4bce8e81198dbef79a89f338ba9018ce7ce09bcd01a1a055291563817a846bf"
+        },
+        {
+            "date": 1685988000643,
+            "name": "/media/md/New Volume1/university-management-auth-service/logs/winston/successes/UMA-2023-06-06-00-success.log",
+            "hash": "2de65d47905b13671ab7096ef355cac315d02eef330b941db39a2685e74cf6cd"
+        }
+    ],
+    "hashType": "sha256"
+}
