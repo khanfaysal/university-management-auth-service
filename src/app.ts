@@ -2,6 +2,7 @@ import express, { Application, NextFunction, Request, Response } from 'express'
 import cors from 'cors'
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
 import { UserRoutes } from './app/modules/user/user.route'
+import { AcademicSemesterRoutes } from './app/modules/academicSemester/academicSemester.route'
 // import apiError from './errors/ApiError';
 
 const app: Application = express()
@@ -12,8 +13,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // application routes
-app.use('/api/v1/users', UserRoutes)
-
+app.use('/api/v1/users',UserRoutes)
+app.use('/api/v1/academic-semester', AcademicSemesterRoutes)
 // custom throw error
 
 // testing purpose route
