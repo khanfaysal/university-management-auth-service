@@ -2,29 +2,35 @@
   message: 'SIGTERM is received',
   level: 'info',
   label: 'UMA',
-  timestamp: '2023-06-08T12:27:46.203Z'
+  timestamp: '2023-06-08T10:13:39.988Z'
 }
 {
   message: 'Database connected Successfully',
   level: 'info',
   label: 'UMA',
-  timestamp: '2023-06-08T12:39:12.770Z'
+  timestamp: '2023-06-08T10:34:59.786Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'UMA',
-  timestamp: '2023-06-08T12:39:12.883Z'
+  timestamp: '2023-06-08T10:34:59.871Z'
+}
+{
+  message: 'SIGTERM is received',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-08T10:38:33.578Z'
 }
 {
   message: 'Database connected Successfully',
   level: 'info',
   label: 'UMA',
-  timestamp: '2023-06-08T12:39:38.606Z'
+  timestamp: '2023-06-08T10:39:09.449Z'
 }
 {
   message: 'Application listening on port 5000',
   level: 'info',
   label: 'UMA',
-  timestamp: '2023-06-08T12:39:38.630Z'
+  timestamp: '2023-06-08T10:39:09.466Z'
 }

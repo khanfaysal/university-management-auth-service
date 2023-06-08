@@ -1,6 +1,9 @@
-import express, { Application, Request, Response } from 'express'
-import usersRouter from './app/modules/users/users.route'
+import express, { Application, NextFunction, Request, Response } from 'express'
 import cors from 'cors'
+import globalErrorHandler from './app/middlewares/globalErrorHandler'
+import { UserRoutes } from './app/modules/user/user.route'
+import { AcademicSemesterRoutes } from './app/modules/academicSemester/academicSemester.route'
+// import apiError from './errors/ApiError';
 
 const app: Application = express()
 
@@ -10,16 +13,21 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // application routes
-app.use('/api/v1/users', usersRouter)
+app.use('/api/v1/users',UserRoutes)
+app.use('/api/v1/academic-semester', AcademicSemesterRoutes)
+// custom throw error
 
 // testing purpose route
-app.get('/', async (req: Request, res: Response) => {
-  // await usersService.createUser({
-  //   id: '999',
-  //   password: '23#23d',
-  //   role: 'student',
-  // })
+app.get('/', (req: Request, res: Response, next: NextFunction) => {
+    // console.log(x)
+    // Promise.reject((new Error('Unhandled promise rejecttion')))
   res.send('Hello World!')
+//   throw new apiError(400, 'error string ( throw apiError) property 😧')
+  // next('global error string property 😧')
 })
 
-export default app
+// global error handler
+app.use(globalErrorHandler)
+
+export default app;
+
