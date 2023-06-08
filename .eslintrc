@@ -19,14 +19,10 @@
   
     "env": {
       "browser": true,
-<<<<<<< HEAD
-      "es2021": true
-=======
       "es2021": true,
       "node": true
     },
     "globals": {
       "process": "readonly"
->>>>>>> b234a02917ef52916cac3621723a25994d7f9094
     }
   }
