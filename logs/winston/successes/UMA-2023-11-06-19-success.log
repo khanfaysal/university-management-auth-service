@@ -1,0 +1,6 @@
+{
+  message: 'SIGTERM is received',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-11T13:10:10.618Z'
+}

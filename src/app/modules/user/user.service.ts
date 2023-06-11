@@ -6,8 +6,10 @@ import { generateUserId } from './user.utils'
 
 const createUser = async (user: IUser): Promise<IUser | null> => {
   // Auto generated incremental id
-  const id = await generateUserId()
-  user.id = id
+  const id = await generateUserId();
+  console.log('user id', id)
+  user.id = id;
+  console.log('user id geneerated', id)
 
   // default password
   if (!user.password) {
