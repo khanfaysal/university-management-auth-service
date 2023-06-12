@@ -5,8 +5,8 @@ import { IAcademicSemester } from "./academicSemester.interface";
 import { AcademicSemester } from "./academicSemester.model";
 import { IPaginationOptions } from "../../../interfaces/pagination";
 import { IGenericResponse } from "../../../interfaces/common";
-
-
+import { paginationHelpers } from "../../../helpers/paginationHelper";
+import { SortOrder } from "mongoose";
 
 const createSemester = async (payload: IAcademicSemester): Promise<IAcademicSemester>=> {
     if(academicSemesterTitleCodeMapper[payload.title] !== payload.code) {
@@ -16,13 +16,16 @@ const createSemester = async (payload: IAcademicSemester): Promise<IAcademicSeme
     return result;
 }
 
-
-
 const getAllSemesters = async (paginationOptions: IPaginationOptions): Promise<IGenericResponse<IAcademicSemester[]>>=> {
-    const {page = 1, limit = 10} = paginationOptions;
-    const skip = (page - 1) * limit;
-    const result = await AcademicSemester.find().sort().skip(skip).limit(limit)
+    const {page, limit, skip, sortBy, sortOrder} = paginationHelpers.calculatePagination(paginationOptions);
+
+    const sortCondtions: {[key:string]: SortOrder} = {}
+    if(sortBy && sortOrder) {
+        sortCondtions[sortBy] = sortOrder;
+    }
+    const result = await AcademicSemester.find().sort(sortCondtions).skip(skip).limit(limit)
     const total = await AcademicSemester.countDocuments()
+
     return {
         meta: {
             page,
