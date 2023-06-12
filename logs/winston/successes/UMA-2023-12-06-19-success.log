@@ -1,0 +1,24 @@
+{
+  message: 'SIGTERM is received',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-12T13:29:37.320Z'
+}
+{
+  message: 'Database connected Successfully',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-12T13:38:31.935Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-12T13:38:32.012Z'
+}
+{
+  message: 'SIGTERM is received',
+  level: 'info',
+  label: 'UMA',
+  timestamp: '2023-06-12T13:40:31.135Z'
+}
