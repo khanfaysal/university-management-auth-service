@@ -6,21 +6,6 @@
     "auditLog": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/.180fd89595b79548dc369c5513b2d4b6de9d9cc8-audit.json",
     "files": [
         {
-            "date": 1686538741818,
-            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-12-06-08-error.log",
-            "hash": "28e122762c4896888c1b600539886ef9eda58d26d3721a8d83046c27dfc05279"
-        },
-        {
-            "date": 1686539649782,
-            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-12-06-09-error.log",
-            "hash": "9ca5b654c7e42648a2cc8098b939c9956ca0901cfec6beec418c075c9fbaa30a"
-        },
-        {
-            "date": 1686546520317,
-            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-12-06-11-error.log",
-            "hash": "bcde23e32fe66b72a6435b62de3f41ab9d713b2f2b98f604a9f68ddf631467b9"
-        },
-        {
             "date": 1686560961719,
             "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-12-06-15-error.log",
             "hash": "470de609448f4d6532811c70ea7c1e5b26a09edc744b3344a3455a47120670fd"
@@ -64,6 +49,16 @@
             "date": 1686593251782,
             "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-13-06-00-error.log",
             "hash": "bcc4cd460dd09ff971fb2f86aa5176466d94536a58ef3fab25409b7127d462f2"
+        },
+        {
+            "date": 1686635289214,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-13-06-11-error.log",
+            "hash": "551c182d377cd66d0eeeb4917eb4eebf03f2a2c3fda5e2ad852b30d711c1d68f"
+        },
+        {
+            "date": 1686636011825,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-13-06-12-error.log",
+            "hash": "8ca6d089cc57002014c620ddfa3415d8286b3a1869c49890eb7594ef02d65426"
         }
     ],
     "hashType": "sha256"

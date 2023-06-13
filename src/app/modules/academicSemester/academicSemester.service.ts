@@ -51,6 +51,8 @@ const getAllSemesters = async (
     })
   }
 
+  const whereConditions = andConditions.length > 0 ? {$and: andConditions} : {}
+
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelpers.calculatePagination(paginationOptions);
 
@@ -59,7 +61,7 @@ const getAllSemesters = async (
   if (sortBy && sortOrder) {
     sortCondtions[sortBy] = sortOrder;
   }
-  const result = await AcademicSemester.find({ $and: andConditions })
+  const result = await AcademicSemester.find(whereConditions)
     .sort(sortCondtions)
     .skip(skip)
     .limit(limit);
