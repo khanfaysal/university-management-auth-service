@@ -9,6 +9,21 @@
             "date": 1686657361755,
             "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-13-06-17-success.log",
             "hash": "a52ff9364bd0b37e0ccda50b50ea0ff54d1bd858e88cc010e04a89d737a2cc01"
+        },
+        {
+            "date": 1686658288370,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-13-06-18-success.log",
+            "hash": "7f5c8c73725a5457300617a29f0988919b9dc28f72db61f7833e94102d5c1f81"
+        },
+        {
+            "date": 1686671076530,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-13-06-21-success.log",
+            "hash": "6c9322a09adb68657d8800867ef63f8996b6ed19dc69cff7d933660989dac6e9"
+        },
+        {
+            "date": 1686673688824,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-13-06-22-success.log",
+            "hash": "552338ae1acf9dfb0f02fc051cd4df5860e5507bf3fa58643757d2b687031e3d"
         }
     ],
     "hashType": "sha256"
