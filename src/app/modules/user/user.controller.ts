@@ -12,7 +12,7 @@ const createUser = catchAsync(async (req: Request, res: Response) => {
   sendResponse<IUser>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'User created successfully',
+    message: 'User created successfully...',
     data: result,
     meta: {
       page: 0,
