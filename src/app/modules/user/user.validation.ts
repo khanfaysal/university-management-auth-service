@@ -1,5 +1,4 @@
-
-import { z } from "zod";
+import { z } from 'zod';
 
 /* 
       1. need to validate the request 
@@ -8,20 +7,17 @@ import { z } from "zod";
 
     */
 
-      const createUserZodSchema = z.object ({
+const createUserZodSchema = z.object({
+  body: z.object({
+    user: z.object({
+      role: z.string({
+        required_error: 'Role is required',
+      }),
+      password: z.string().optional(),
+    }),
+  }),
+});
 
-        body: z.object({
-          user: z.object({
-            role: z.string({
-              required_error: 'Role is required'
-            }),
-            password: z.string().optional()
-          })
-          
-        })
-      })
-
-
-      export const userValidation = {
-        createUserZodSchema
-      }
+export const userValidation = {
+  createUserZodSchema,
+};
