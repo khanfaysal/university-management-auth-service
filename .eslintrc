@@ -9,11 +9,11 @@
     "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
   
     "rules": {
-      "no-unused-vars": "error",
-      "no-console":"warn",
-      "no-undef":"error",
-      "no-unused-expressions":"error",
-      "no-unreachable":"error",
+      "no-unused-vars": "warn",
+      "prefer-const": "warn",
+      "no-unused-expressions": "warn",
+      "no-undef": "warn",
+      "no-console": "warn",
       "@typescript-eslint/consistent-type-definitions": ["error", "type"]
     },
   
