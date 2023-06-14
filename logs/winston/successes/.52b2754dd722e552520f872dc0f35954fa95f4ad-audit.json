@@ -6,16 +6,6 @@
     "auditLog": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/.52b2754dd722e552520f872dc0f35954fa95f4ad-audit.json",
     "files": [
         {
-            "date": 1686657361755,
-            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-13-06-17-success.log",
-            "hash": "a52ff9364bd0b37e0ccda50b50ea0ff54d1bd858e88cc010e04a89d737a2cc01"
-        },
-        {
-            "date": 1686658288370,
-            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-13-06-18-success.log",
-            "hash": "7f5c8c73725a5457300617a29f0988919b9dc28f72db61f7833e94102d5c1f81"
-        },
-        {
             "date": 1686671076530,
             "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-13-06-21-success.log",
             "hash": "6c9322a09adb68657d8800867ef63f8996b6ed19dc69cff7d933660989dac6e9"
@@ -34,6 +24,26 @@
             "date": 1686737077142,
             "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-14-06-16-success.log",
             "hash": "81eec6f6151235ef06d6b861b86662096e947472a07f2ffabcfe4e621ebccef6"
+        },
+        {
+            "date": 1686742169693,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-14-06-17-success.log",
+            "hash": "1e754590b5a091dfd22781e7ed0ed6058600df32030ed43b2423e843ce26f1c6"
+        },
+        {
+            "date": 1686746311714,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-14-06-18-success.log",
+            "hash": "2370621bcc581efaffd1c9e08fbf9fa59ef09d258c929cb1c247eecc9caf6be9"
+        },
+        {
+            "date": 1686754542472,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-14-06-20-success.log",
+            "hash": "b038a0f2d5745a8e989eb657f1edcb0f7f0ae43feab454306e7dbe0cf040662d"
+        },
+        {
+            "date": 1686757052314,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-14-06-21-success.log",
+            "hash": "e8ccd3d4e4ebd4fd119ef597c3566446ff0594309948aa4f7b8691b7c9728a05"
         }
     ],
     "hashType": "sha256"
