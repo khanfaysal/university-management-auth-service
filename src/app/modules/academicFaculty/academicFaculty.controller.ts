@@ -7,7 +7,6 @@ import { AcademicFacultyService } from './academicFaculty.service';
 import pick from '../../../share/pick';
 import { academicFacultyFilterableFields } from './academicFaculty.constant';
 import { paginationFields } from '../../../constant/pagination';
-import { AcademicFaculty } from './academicFaculty.model';
 
 const createFaculty = catchAsync(async (req: Request, res: Response) => {
   const { ...academicFacultyData } = req.body;
@@ -18,7 +17,7 @@ const createFaculty = catchAsync(async (req: Request, res: Response) => {
   sendResponse<IAcademicFaculty>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Academic Semester created successfully',
+    message: 'Academic faculty created successfully',
     data: result,
   });
 });
@@ -60,7 +59,19 @@ const updateFaculty = catchAsync(async (req: Request, res: Response) => {
   sendResponse<IAcademicFaculty>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Single academic faculty retrieved successfully',
+    message: 'Academic faculty updated successfully',
+    data: result,
+  });
+});
+
+const deleteFaculty = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await AcademicFacultyService.deleteFaculty(id);
+
+  sendResponse<IAcademicFaculty>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic faculty deleted successfully',
     data: result,
   });
 });
@@ -70,4 +81,5 @@ export const AcademicFacultyController = {
   getAllFaculties,
   getSingleFaculty,
   updateFaculty,
+  deleteFaculty,
 };
