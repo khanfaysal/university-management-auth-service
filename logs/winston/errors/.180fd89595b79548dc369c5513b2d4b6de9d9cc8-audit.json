@@ -34,6 +34,16 @@
             "date": 1686763388790,
             "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-14-06-23-error.log",
             "hash": "dae1251a86a0488898297345cef9e78930f42d4ecb101b6459e03744502fb7b5"
+        },
+        {
+            "date": 1686799025025,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-15-06-09-error.log",
+            "hash": "76428151842137b22c2780609282cddadab9778bb6b060d7dc871f3556698a1e"
+        },
+        {
+            "date": 1686804708091,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-15-06-10-error.log",
+            "hash": "8db7c6731faae2f5fad110f325cb1a19e785ff8813f3ba4f8e36be76a21a2d1a"
         }
     ],
     "hashType": "sha256"
