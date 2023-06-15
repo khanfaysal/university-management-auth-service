@@ -7,6 +7,7 @@ import { AcademicFacultyService } from './academicFaculty.service';
 import pick from '../../../share/pick';
 import { academicFacultyFilterableFields } from './academicFaculty.constant';
 import { paginationFields } from '../../../constant/pagination';
+import { AcademicFaculty } from './academicFaculty.model';
 
 const createFaculty = catchAsync(async (req: Request, res: Response) => {
   const { ...academicFacultyData } = req.body;
@@ -51,8 +52,22 @@ const getSingleFaculty = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const updateFaculty = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const updateData = req.body;
+  const result = await AcademicFacultyService.updateFaculty(id, updateData);
+
+  sendResponse<IAcademicFaculty>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Single academic faculty retrieved successfully',
+    data: result,
+  });
+});
+
 export const AcademicFacultyController = {
   createFaculty,
   getAllFaculties,
   getSingleFaculty,
+  updateFaculty,
 };

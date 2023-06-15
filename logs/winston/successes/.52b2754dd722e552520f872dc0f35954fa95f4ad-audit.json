@@ -54,6 +54,11 @@
             "date": 1686805504687,
             "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-15-06-11-success.log",
             "hash": "44092301e2415e825c61f2b6fe3ee17bd55392d0ee8cad829db58445fe51ca36"
+        },
+        {
+            "date": 1686817358543,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/successes/UMA-2023-15-06-14-success.log",
+            "hash": "1261b9920808881264cdf2556b3a4cac72675bcbde6d356a68cd851744fe349c"
         }
     ],
     "hashType": "sha256"
