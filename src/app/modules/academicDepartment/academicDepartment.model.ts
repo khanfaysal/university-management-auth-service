@@ -4,7 +4,7 @@ import {
   IAcademicDepartment,
 } from './academicDepartment.interface';
 
-export const AcademicDepartmentSchema = new Schema<
+const AcademicDepartmentSchema = new Schema<
   IAcademicDepartment,
   AcademicDepartmentModel
 >(
@@ -16,13 +16,15 @@ export const AcademicDepartmentSchema = new Schema<
     },
     academicFaculty: {
       type: Schema.Types.ObjectId,
+      ref: 'AcademicFaculty',
       required: true,
-      ref: 'academicFaculty',
     },
   },
   {
     timestamps: true,
-    toJSON: { virtuals: true },
+    toJSON: {
+      virtuals: true,
+    },
   }
 );
 
