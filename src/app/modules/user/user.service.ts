@@ -1,13 +1,13 @@
 import { IStudent } from './../student/student.interface';
-import config from '../../../../config/index';
 import apiError from '../../../errors/ApiError';
 import { IUser } from './user.interface';
 import { User } from './user.model';
-import { generateFacultyId, generateStudentId } from './user.utils';
+import { generateStudentId } from './user.utils';
 import { AcademicSemester } from '../academicSemester/academicSemester.model';
 import mongoose from 'mongoose';
 import httpStatus from 'http-status';
 import { Student } from '../student/student.model';
+import config from '../../../config';
 
 const createStudent = async (
   student: IStudent,

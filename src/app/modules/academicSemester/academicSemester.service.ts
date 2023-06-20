@@ -82,6 +82,7 @@ const getSingleSemester = async (
   id: string
 ): Promise<IAcademicSemester | null> => {
   const result = await AcademicSemester.findById(id);
+  console.log('Show single semester', result);
   return result;
 };
 

@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
 import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
-import config from '../../../config';
 import { IGenericErrorMessage } from '../../interfaces/error';
 import handleValidationError from '../../errors/handleValidationError';
 import apiError from '../../errors/ApiError';
@@ -9,6 +8,7 @@ import { errorLogger } from '../../share/logger';
 import { ZodError } from 'zod';
 import handleZodError from '../../errors/handleZodError';
 import handleCastError from '../../errors/handleCastError';
+import config from '../../config';
 
 const globalErrorHandler: ErrorRequestHandler = (
   error,

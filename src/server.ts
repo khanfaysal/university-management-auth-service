@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-import config from '../config';
 import app from './app';
 import { logger, errorLogger } from './share/logger';
 import { Server } from 'http';
+import config from './config';
 
 process.on('uncaughtException', error => {
   errorLogger.error(error);
