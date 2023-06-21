@@ -9,6 +9,41 @@
             "date": 1687272846844,
             "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-20-06-20-error.log",
             "hash": "6f00a8d7dc1324f25dab855121f48588e67e371b558d1bc97ded3db0a5ede26f"
+        },
+        {
+            "date": 1687285345885,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-21-06-00-error.log",
+            "hash": "c565853b37ce46cefe65a64784308b27821dc2afd3f860d4e57237e050f5b2d7"
+        },
+        {
+            "date": 1687324389755,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-21-06-11-error.log",
+            "hash": "bef7ab73c5854251573ec417756bef2e49c63e9d92d742424be97f2062e09d65"
+        },
+        {
+            "date": 1687331078593,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-21-06-13-error.log",
+            "hash": "e60d8460d7b984781779ac03373a8f56ae03a833ec9a36c6f211dedf4d019216"
+        },
+        {
+            "date": 1687334555562,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-21-06-14-error.log",
+            "hash": "291eee5ddbb9d56c5570cd38913c537eb65b20264c276ba9a0402dc60fddb7c3"
+        },
+        {
+            "date": 1687343265462,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-21-06-16-error.log",
+            "hash": "ce77e7007cc649bb961ddfced74c72d3f41cdea7b88bf30e51c49d7d26842469"
+        },
+        {
+            "date": 1687345248074,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-21-06-17-error.log",
+            "hash": "87c74e0f95449822e6c11d16c49d23f4ae913aab9796eb68e5727052108399c5"
+        },
+        {
+            "date": 1687351189426,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-21-06-18-error.log",
+            "hash": "e86272171ff0d62fa8d3d1efc88ee6e583cebe805d56a7251c1dcb5d9788e24a"
         }
     ],
     "hashType": "sha256"

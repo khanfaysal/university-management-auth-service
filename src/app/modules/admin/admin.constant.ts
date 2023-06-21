@@ -1,4 +1,4 @@
-export const facultyFilterableFields = [
+export const adminFilterableFields = [
   'searchTerm',
   'id',
   'gender',
@@ -6,12 +6,11 @@ export const facultyFilterableFields = [
   'email',
   'contactNo',
   'emergencyContactNo',
-  'academicFaculty',
-  'academicDepartment',
+  'managementDepartment',
   'designation',
 ];
 
-export const facultySearchableFields = [
+export const adminSearchableFields = [
   'email',
   'contactNo',
   'emergencyContactNo',
