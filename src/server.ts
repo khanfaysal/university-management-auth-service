@@ -23,9 +23,9 @@ async function bootstrap() {
     errorLogger.error('Failed to connect database', error);
   }
   process.on('unhandledRejection', error => {
-    console.log('unhandledRejection is detected, we are colsing our server');
+    // console.log('unhandledRejection is detected, we are colsing our server');
     if (server) {
-      server.close(error => {
+      server.close(() => {
         errorLogger.error(error);
         process.exit(1);
       });
