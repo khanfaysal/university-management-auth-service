@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-this-alias */
 import { model, Schema } from 'mongoose';
-import { IUser, UserModel } from './user.interface';
+import { IUser, IUserMethods, UserModel } from './user.interface';
 import config from '../../../config';
 import bcrypt from 'bcrypt';
 
-const userSchema = new Schema<IUser>(
+const userSchema = new Schema<IUser, Record<string, never>, IUserMethods>(
   {
     id: { type: String, required: true },
     role: { type: String, required: true },
@@ -16,6 +16,23 @@ const userSchema = new Schema<IUser>(
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );
+
+userSchema.methods.isUserExist = async function (
+  id: string
+): Promise<Partial<IUser> | null> {
+  const user = await User.findOne(
+    { id },
+    { id: 1, password: 1, needsPasswordChange: 1 }
+  );
+  return user;
+};
+
+userSchema.methods.isPasswordMatch = async function (
+  givenPassword: string,
+  savePassword: string
+): Promise<boolean> {
+  return await bcrypt.compare(givenPassword, savePassword);
+};
 
 // pre middleware
 userSchema.pre('save', async function (next) {
