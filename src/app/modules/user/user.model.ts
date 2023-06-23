@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-this-alias */
 import { model, Schema } from 'mongoose';
-import { IUser, IUserMethods, UserModel } from './user.interface';
+import { IUser, UserModel } from './user.interface';
 import config from '../../../config';
 import bcrypt from 'bcrypt';
 
-const userSchema = new Schema<IUser, Record<string, never>, IUserMethods>(
+const userSchema = new Schema<IUser, UserModel>(
   {
     id: { type: String, required: true },
     role: { type: String, required: true },
@@ -17,9 +17,9 @@ const userSchema = new Schema<IUser, Record<string, never>, IUserMethods>(
   { timestamps: true, toJSON: { virtuals: true } }
 );
 
-userSchema.methods.isUserExist = async function (
+userSchema.statics.isUserExist = async function (
   id: string
-): Promise<Partial<IUser> | null> {
+): Promise<Pick<IUser, 'id' | 'password' | 'needsPasswordChange'> | null> {
   const user = await User.findOne(
     { id },
     { id: 1, password: 1, needsPasswordChange: 1 }
@@ -27,7 +27,7 @@ userSchema.methods.isUserExist = async function (
   return user;
 };
 
-userSchema.methods.isPasswordMatch = async function (
+userSchema.statics.isPasswordMatch = async function (
   givenPassword: string,
   savePassword: string
 ): Promise<boolean> {
@@ -47,3 +47,21 @@ userSchema.pre('save', async function (next) {
 });
 
 export const User = model<IUser, UserModel>('User', userSchema);
+
+// it was instance method codebase
+// userSchema.methods.isUserExist = async function (
+//   id: string
+// ): Promise<Partial<IUser> | null> {
+//   const user = await User.findOne(
+//     { id },
+//     { id: 1, password: 1, needsPasswordChange: 1 }
+//   );
+//   return user;
+// };
+
+// userSchema.methods.isPasswordMatch = async function (
+//   givenPassword: string,
+//   savePassword: string
+// ): Promise<boolean> {
+//   return await bcrypt.compare(givenPassword, savePassword);
+// };

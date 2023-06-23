@@ -1,3 +1,4 @@
+import { UserModel } from './../user/user.interface';
 import httpStatus from 'http-status';
 import apiError from '../../../errors/ApiError';
 import { User } from '../user/user.model';
@@ -6,8 +7,12 @@ import { ILoginUser } from './auth.interface';
 const loginUser = async (payload: ILoginUser) => {
   const { id, password } = payload;
 
-  const user = new User();
-  const isUserExist = await user.isUserExist(id);
+  // creating instance of user login
+  // const user = new User();
+  // access to our instance method
+  // const isUserExist = await user.isUserExist(id);
+
+  const isUserExist = await User.isUserExist(id);
 
   if (!isUserExist) {
     throw new apiError(httpStatus.NOT_FOUND, 'User not found  ');
@@ -18,7 +23,7 @@ const loginUser = async (payload: ILoginUser) => {
 
   if (
     isUserExist.password &&
-    !user.isPasswordMatch(password, isUserExist?.password)
+    !(await User.isPasswordMatch(password, isUserExist.password))
   ) {
     throw new apiError(httpStatus.UNAUTHORIZED, 'Password do not match');
   }
