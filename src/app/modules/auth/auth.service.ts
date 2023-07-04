@@ -2,22 +2,19 @@ import httpStatus from 'http-status';
 import apiError from '../../../errors/ApiError';
 import { User } from '../user/user.model';
 import {
+  IChangePassword,
   ILoginUser,
   ILoginUserResponse,
   IRefreshTokenResponse,
 } from './auth.interface';
-import { Secret } from 'jsonwebtoken';
+import { JwtPayload, Secret } from 'jsonwebtoken';
 import config from '../../../config';
 import { jwtHelpers } from '../../../helpers/jwtHelpers';
 import jwt from 'jsonwebtoken';
+import bcrypt from 'bcrypt';
 
 const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   const { id, password } = payload;
-
-  // creating instance of user login
-  // const user = new User();
-  // access to our instance method
-  // const isUserExist = await user.isUserExist(id);
 
   const isUserExist = await User.isUserExist(id);
   console.log(isUserExist);
@@ -27,8 +24,6 @@ const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   }
 
   // match password
-  // const isPasswordMatch = bcrypt.compare(password, isUserExist?.password);
-
   if (
     isUserExist.password &&
     !(await User.isPasswordMatch(password, isUserExist.password))
@@ -88,7 +83,45 @@ const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   };
 };
 
+const changePassword = async (
+  user: JwtPayload | null,
+  payload: IChangePassword
+): Promise<void> => {
+  const { oldPassword, newPassword } = payload;
+  console.log({ user });
+
+  const isUserExist = await User.isUserExist(user?.userId);
+  // checking is user exists
+  if (!isUserExist) {
+    throw new apiError(httpStatus.NOT_FOUND, 'User not found  ');
+  }
+  // checking old password
+  if (
+    isUserExist.password &&
+    !(await User.isPasswordMatch(oldPassword, isUserExist.password))
+  ) {
+    throw new apiError(httpStatus.UNAUTHORIZED, 'Old password do not match');
+  }
+
+  // hash password before saving
+  const newHashPassword = await bcrypt.hash(
+    newPassword,
+    Number(config.bcrypt_salt_rounds)
+  );
+
+  // update password
+
+  const query = { id: user?.userId };
+  const updateData = {
+    password: newHashPassword,
+    needsPasswordChange: false,
+    passwordChangeAt: new Date(),
+  };
+  await User.findOneAndUpdate(query, updateData);
+};
+
 export const AuthService = {
   loginUser,
   refreshToken,
+  changePassword,
 };
