@@ -29,6 +29,21 @@
             "date": 1688490161102,
             "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-04-07-23-error.log",
             "hash": "0ace229286164516f6f11b888c9c8c93762dc6ff830fb26d82a0d0126cff12ae"
+        },
+        {
+            "date": 1688494987766,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-05-07-00-error.log",
+            "hash": "8698fc312c950ce92a21cddfc07e34a2aadb4549cdc1afae5d121fb11714fea2"
+        },
+        {
+            "date": 1688529465413,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-05-07-09-error.log",
+            "hash": "fd66d041f379e10f842b199f0907c05c860544f1f3c68196c821fe6d45f2e07c"
+        },
+        {
+            "date": 1688529624829,
+            "name": "/media/md/New Volume/university-management-auth-service/logs/winston/errors/UMA-2023-05-07-10-error.log",
+            "hash": "fc591f8a62b43388faf04cb6deadb7b017ca4fce5d13ef156d687d8a68671760"
         }
     ],
     "hashType": "sha256"
